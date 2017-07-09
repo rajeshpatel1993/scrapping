@@ -69,7 +69,8 @@ app.post('/',(req,res)=>{
             });
 
 
-
+res.send(sdescription);
+            
             for(var i=0;i<hrefs.length;i++){
 
                 var post = new La({
