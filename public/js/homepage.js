@@ -11,7 +11,7 @@ jQuery("#request").click(function (e) {
         type: 'POST',
         data: JSON.stringify(data),
         contentType: 'application/json',
-        url: 'http://localhost:3000/',
+        url: 'https://arcane-wildwood-85920.herokuapp.com/',
         success: function(data) {
             var json = JSON.parse(data);
             if(json.success == 1){
@@ -36,7 +36,7 @@ jQuery("#fetch").click(function (e) {
     $.ajax({
         type: 'GET',
         data: data,
-        url: 'http://localhost:3000/api/get',
+        url: 'https://arcane-wildwood-85920.herokuapp.com/api/get',
         success: function(data) {
             var json = JSON.parse(data);
             if(json.success == 1){
